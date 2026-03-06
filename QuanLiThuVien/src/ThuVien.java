@@ -40,6 +40,17 @@ public class ThuVien {
         return namXuatBan;
     }
 
+    public boolean getTrangThai() {
+        return trangThai;
+    }
+
+    public String getTrangThaiString() {
+        if(getTrangThai() == true) {
+            return "Có sẵn";
+        }
+        return "Không có sẵn";
+    }
+
     //setter
     public void setMaSach(String maSach) {
         if(maSach != null && !maSach.trim().isEmpty()) {
