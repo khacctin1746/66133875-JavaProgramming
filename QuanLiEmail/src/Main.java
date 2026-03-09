@@ -18,7 +18,7 @@ public class Main {
         System.out.println("= = = = = = = = = = = = = = = = = = = =");
         //test case 2:
         EmailAccount email2 = new EmailAccount();
-        email2.setEmail("khacctingmail.com");
+        email2.setEmail("khacctingmailcom");
         email2.setPassword("@123");
         email2.setStorageLimit(-1);
         email2.changePassword("meomeo@124", "meomeo@1234");
