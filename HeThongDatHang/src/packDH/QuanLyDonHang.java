@@ -20,16 +20,19 @@ public class QuanLyDonHang {
         System.out.println("= Khong tim thay don hang");
     }
 
-    public void moTa() {
+    public void moTa(String maDH) {
         for(DonHang dh : ds) {
-            System.out.println("+ DON HANG | Ma: " + dh.getMaDH());
-            System.out.println("- Ten khach hang: " + dh.getTenKH());
-            System.out.println("- Mo ta san pham: ");
-            for(String sp : dh.getDanhSachSanPham()) {
-                System.out.println("> " + sp);
+            if(dh.getMaDH().equalsIgnoreCase(maDH)) {
+                System.out.println("+ DON HANG | Ma: " + dh.getMaDH());
+                System.out.println("- Ten khach hang: " + dh.getTenKH());
+                System.out.println("- Mo ta san pham: ");
+                for(String sp : dh.getDanhSachSanPham()) {
+                    System.out.println("> " + sp);
+                }
+                System.out.println("- Tong tien: " + dh.getTongTien());
+                return;
             }
-            System.out.println("- Tong tien: " + dh.getTongTien());
         }
+        System.out.println("= Khong tim thay ma don hang!");
     }
-
 }
