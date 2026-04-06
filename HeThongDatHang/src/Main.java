@@ -36,6 +36,14 @@ public class Main {
             ql.themSanPhamVaoDon(maDH, motaSP);
         }
     }
+
+    public static void inDon() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("+ Vui long nhap ma don hang de kiem tra: ");
+        String option = scanner.nextLine();
+        ql.moTa(option);
+    }
+
     public static void menu() {
         Scanner scanner = new Scanner(System.in);
 
@@ -47,6 +55,9 @@ public class Main {
         if(option == 1) {
             themDH();
             menu();
+        } else if(option == 2) {
+            inDon();
+            menu();
         }
     }
     public static void main(String[] args) {
@@ -54,6 +65,11 @@ public class Main {
         ql.themDonHang(new DonHang("FER174", "NGUYEN KHAC TIN", 128000));
         ql.themSanPhamVaoDon("FER174", "Tui nhua 100k");
         ql.themSanPhamVaoDon("FER174", "Monster Energy Ultra Zero 28k");
+
+        //TEST SP2
+        ql.themDonHang(new DonHang("FER175", "NGUYEN KHAC TIN", 999999));
+        ql.themSanPhamVaoDon("FER175", "Tui nhua 998k");
+        ql.themSanPhamVaoDon("FER175", "Monster Energy Ultra Mango 1k");
         //ql.moTa("FER174");
 
         menu();
