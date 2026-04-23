@@ -39,6 +39,10 @@ public class SinhVien {
         return namSinh;
     }
 
+    public int getTuoi() {
+        return 2026 - namSinh;
+    }
+
     //setter
     public void setMaSV(String maSV) {
         this.maSV = maSV;

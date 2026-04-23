@@ -15,6 +15,8 @@ public class Main {
         ThemMoiSV();
         //In ra thông tin sinh viên
         InThongTinSinhVien();
+        // In ra thông tin sinh viên có tuổi > 20
+        LocSinhVien();
     }
 
     // hàm xử lí thêm mới sinh viên
@@ -27,6 +29,7 @@ public class Main {
         sv.setHoTen(scanner.nextLine());
         System.out.print("Vui long nhap nam sinh sinh vien: ");
         sv.setNamSinh(scanner.nextInt());
+        scanner.nextLine();
         System.out.print("Vui long nhap gioi tinh sinh vien");
         sv.setGioiTinh(scanner.nextLine());
         ds.add(sv);
@@ -41,5 +44,15 @@ public class Main {
             System.out.println("- Giới tính sinh viên: " + sv.getGioiTinh());
         }
     }
-
+    // hàm xử lí lọc tuổi > 20 của sinh viên và in ra
+    public static void LocSinhVien() {
+        for(SinhVien sv : ds) {
+            if(sv.getTuoi() > 20) {
+                System.out.println("- Mã sinh viên: " + sv.getMaSV());
+                System.out.println("- Họ tên sinh viên:" + sv.getHoTen());
+                System.out.println("- Năm sinh sinh viên: " + sv.getNamSinh());
+                System.out.println("- Giới tính sinh viên: " + sv.getGioiTinh());
+            }
+        }
+    }
 }
