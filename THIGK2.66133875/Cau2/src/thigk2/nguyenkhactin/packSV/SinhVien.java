@@ -22,6 +22,7 @@ public class SinhVien {
         this.gioiTinh = gioiTinh;
     }
 
+    //getter
     public String getMaSV() {
         return maSV;
     }
@@ -38,6 +39,7 @@ public class SinhVien {
         return namSinh;
     }
 
+    //setter
     public void setMaSV(String maSV) {
         this.maSV = maSV;
     }
@@ -53,4 +55,5 @@ public class SinhVien {
     public void setGioiTinh(String gioiTinh) {
         this.gioiTinh = gioiTinh;
     }
+
 }

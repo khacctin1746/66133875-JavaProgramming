@@ -1,7 +1,45 @@
 package thigk2.nguyenkhactin;
 
-public class Main {
-    public static void main(String[] args) {
+import thigk2.nguyenkhactin.packSV.SinhVien;
 
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main {
+    public static ArrayList<SinhVien> ds = new ArrayList<SinhVien>();
+    public static void main(String[] args) {
+        ds.add(new SinhVien("66133875", "NGUYEN KHAC TIN", 2006, "Nam"));
+        ds.add(new SinhVien("66133877", "NGUYEN DIEU LINH", 2006, "Nu"));
+        ds.add(new SinhVien("66143879", "NGUYEN QUANG HUY", 2006, "Nam"));
+        //Thêm sinh viên mới
+        ThemMoiSV();
+        //In ra thông tin sinh viên
+        InThongTinSinhVien();
     }
+
+    // hàm xử lí thêm mới sinh viên
+    public static void ThemMoiSV() {
+        SinhVien sv = new SinhVien();
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Vui long nhap ma so sinh vien: ");
+        sv.setMaSV(scanner.nextLine());
+        System.out.print("Vui long nhap ten sinh vien: ");
+        sv.setHoTen(scanner.nextLine());
+        System.out.print("Vui long nhap nam sinh sinh vien: ");
+        sv.setNamSinh(scanner.nextInt());
+        System.out.print("Vui long nhap gioi tinh sinh vien");
+        sv.setGioiTinh(scanner.nextLine());
+        ds.add(sv);
+    }
+
+    // hàm xử lí in ra thông tin sinh viên
+    public static void InThongTinSinhVien() {
+        for(SinhVien sv : ds) {
+            System.out.println("- Mã sinh viên: " + sv.getMaSV());
+            System.out.println("- Họ tên sinh viên:" + sv.getHoTen());
+            System.out.println("- Năm sinh sinh viên: " + sv.getNamSinh());
+            System.out.println("- Giới tính sinh viên: " + sv.getGioiTinh());
+        }
+    }
+
 }
