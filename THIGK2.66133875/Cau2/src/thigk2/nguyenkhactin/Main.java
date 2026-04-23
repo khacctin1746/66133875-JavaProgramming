@@ -11,9 +11,11 @@ public class Main {
         ds.add(new SinhVien("66133875", "NGUYEN KHAC TIN", 2006, "Nam"));
         ds.add(new SinhVien("66133877", "NGUYEN DIEU LINH", 2006, "Nu"));
         ds.add(new SinhVien("66143879", "NGUYEN QUANG HUY", 2006, "Nam"));
+        // In ra danh sách sinh viên hard code
+        InThongTinSinhVien();
         //Thêm sinh viên mới
         ThemMoiSV();
-        //In ra thông tin sinh viên
+        //In ra lại thông tin sinh viên
         InThongTinSinhVien();
         // In ra thông tin sinh viên có tuổi > 20
         LocSinhVien();
@@ -30,7 +32,7 @@ public class Main {
         System.out.print("Vui long nhap nam sinh sinh vien: ");
         sv.setNamSinh(scanner.nextInt());
         scanner.nextLine();
-        System.out.print("Vui long nhap gioi tinh sinh vien");
+        System.out.print("Vui long nhap gioi tinh sinh vien: ");
         sv.setGioiTinh(scanner.nextLine());
         ds.add(sv);
     }
