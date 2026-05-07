@@ -1,0 +1,4 @@
+name: SoSuMenh
+version: '1.0'
+main: org.khacctin.soSuMenh.SoSuMenh
+api-version: '1.21'

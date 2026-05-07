@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d919d12a-205b-4e62-997d-c0578c6afd7f" name="Changes" comment="" />
+    <list default="true" id="d919d12a-205b-4e62-997d-c0578c6afd7f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../VD3_Chuong5/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../VD3_Chuong5/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VD4_Chuong5/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../VD4_Chuong5/.idea/misc.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,9 +13,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="3Bxj2UWoQ1zlPW7RNNJDobjMqNn" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -22,6 +25,8 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "onboarding.tips.debug.path": "D:/File Manager/2.Code/NEC331_LaptrinhJava/66133875-JavaProgramming/ItemFastTrading/src/Main.java",
     "settings.editor.selected.configurable": "preferences.lookFeel"
